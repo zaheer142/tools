@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image & PDF Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Header */
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item img {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+
+        .feature-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Tools Section */
+        .tools {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .tools h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tool-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tool-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tool-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .tool-item p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .feature-grid, .tool-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Image & PDF Tools</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Your All-in-One Solution for Image and PDF Editing</h2>
+            <p>Convert, compress, edit, and manage your files with ease.</p>
+            <a href="#tools" class="btn">Explore Tools</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <img src="https://via.placeholder.com/50" alt="Fast Processing">
+                    <h3>Fast Processing</h3>
+                    <p>Quickly process your images and PDFs without compromising quality.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="https://via.placeholder.com/50" alt="User-Friendly">
+                    <h3>User-Friendly</h3>
+                    <p>Intuitive interface designed for both beginners and professionals.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="https://via.placeholder.com/50" alt="Secure">
+                    <h3>Secure</h3>
+                    <p>Your files are safe with us. We prioritize your privacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2>Our Tools</h2>
+            <div class="tool-grid">
+                <div class="tool-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Image Compressor">
+                    <h3>Image Compressor</h3>
+                    <p>Reduce the size of your images without losing quality.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://via.placeholder.com/300x200" alt="PDF Merger">
+                    <h3>PDF Merger</h3>
+                    <p>Combine multiple PDF files into one document.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Image Converter">
+                    <h3>Image Converter</h3>
+                    <p>Convert images to different formats like JPG, PNG, GIF, etc.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="https://via.placeholder.com/300x200" alt="PDF Splitter">
+                    <h3>PDF Splitter</h3>
+                    <p>Split a PDF into multiple files with ease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us at <a href="mailto:support@imagetools.com">support@imagetools.com</a></p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
